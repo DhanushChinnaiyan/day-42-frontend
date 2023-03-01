@@ -54,7 +54,7 @@ const AddStudents = ({studentsData,setStudentsData}) => {
 
             const data = await response.json();
             console.log(data)
-            setStudentsData([...studentsData,data])
+            setStudentsData([...studentsData,data.data])
     
             history.push("/students-list")
             // console.log(data)
